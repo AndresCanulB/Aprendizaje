@@ -1,0 +1,44 @@
+
+- Que son los tipos de datos en Typescript?
+
+    Existen los tipos de datos primitivos y los tipos de datos compuestos
+
+- Que es un booleano?
+
+    Es un tipo de dato que puede tener dos valores: true o false
+
+- Que es un numero?
+
+    Es un tipo de dato que representa valores numéricos, tanto enteros como decimales
+
+- Que es un string?
+
+    Es un tipo de dato que representa una cadena de caracteres
+
+- Que es un tipo Any?
+
+    Es un tipo de dato que puede representar cualquier valor, sin restricciones de tipo
+
+- Que es un Arreglo?
+
+    Es un tipo de dato que representa una colección de elementos del mismo tipo, organizados en una secuencia
+
+- Que son las Tuplas?
+
+    Son un tipo de dato que permite almacenar un conjunto de valores de diferentes tipos en una sola variable, con un orden específico
+
+- Que son las Enumeraciones?
+
+    Son un tipo de dato que permite definir un conjunto de valores constantes con nombres simbólicos, facilitando la legibilidad del código
+
+- Que es un retorno void?
+
+    Es un tipo de dato que indica que una función no devuelve ningún valor
+
+- Que es null?
+
+    Es la ausencia de un valor
+
+- Que es undefined?
+
+    No se ha definido un valor o no se ha inicializado una variable

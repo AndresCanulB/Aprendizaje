@@ -1,0 +1,93 @@
+NPM es el registro de paquetes mas grande que existe
+
+Hay que diferenciar dos cosas:
+
+NPM - Es el registro de codigo abierto de paquetes gratuito
+
+NPM - Tambien es una linea de comandos
+
+Ya que existen otras alternativas en la linea de comandos
+
+Como: Yarn - PNMP
+
+Se pueden utilizar esas alternativas para descargar dependencias y utilizar el registro de NPM
+
+npm init = Es una utilidad que crea un package.json que tiene una descripcion del proyecto de NodeJS
+
+Con npm init nos haran preguntas para crear el proyecto
+
+Si no queremos responder preguntas y crear el proyecto rapido:
+
+npm init -y 
+
+npm init --yes
+
+----------------------------------------------------------------------------------------------------------
+
+Para instalar dependenciar
+
+npm i dependencia
+
+npm install dependencia
+
+"dependencies": {
+    "picocolors" "^1.0.0"
+}
+
+El simbolo ^ significa que se actualizara automaticamente en las versiones despues del .
+
+El mejor consejo de seguridad es eliminar el ^
+
+Se puede usar la extension version lens para actualizar las dependencias
+
+// 1.0.0 -> SEMANTIC VERSIONING
+
+// X.Y.Z -> X = MAJOR es cuando se rompe la compatibilidad hacia atras
+// X.Y.Z -> Y = MINOR es cuando se añaden nuevas funcionalidades
+// X.Y.Z -> Z = PATCH es caundo se arreglan bugs
+
+TypeScript no respeta la SEMANTIC VERSIONING
+
+-------------------------------------------------------------------------------------------------------------
+
+Al descargar dependencias se creara la carpeta Node Modules
+
+Cada dependencia que descarguemos se mostrara en Node Modules
+
+Para importar dependencias descargadas con NPM
+
+const picocolors = require("picocolors")
+
+Al instalar una dependencia, se pueden instalar otras microdependencias
+
+Al instalar muchas dependencias, se hará mas pesado el proyecto
+
+---------------------------------------------------------------------------------------------------------------
+
+Para eliminar una dependencia
+
+npm uninstall dependencia
+
+Tambien eliminara las microdependencias de la dependencia
+
+----------------------------------------------------------------------------------------------------------------
+
+Existen dos tipos de dependencias
+
+- Dependencias de produccion
+
+- Dependencias de desarrollo
+
+Para instalar una dependencia en modo desarrollo:
+
+npm install dependencia --development
+
+npm i dependencia -D
+
+Al instalar dependencias en modo desarrollo, no se instalan en produccion
+
+-----------------------------------------------------------------------------------------------------------------
+
+Dependencia interesante: standard
+
+La dependencia standard scanea nuestro codigo, identa, acomoda y corrige sintaxis

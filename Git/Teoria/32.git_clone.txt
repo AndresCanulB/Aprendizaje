@@ -1,0 +1,4 @@
+
+- Sirve para descargar un repositorio de GitHub a tu máquina local
+
+    git clone git@github.com:AndresCanulB/Git_Practice.git

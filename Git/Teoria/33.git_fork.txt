@@ -1,0 +1,4 @@
+
+- El fork es como una copia de un repositorio de GitHub que se hace en tu cuenta de GitHub. Es una bifurcacion.
+
+- El fork sirve para poder hacer cambios en el repositorio sin afectar el original.

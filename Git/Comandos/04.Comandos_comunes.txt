@@ -1,0 +1,11 @@
+- Comandos mas comunes:
+
+    git status
+    git add .
+    git commit -m "mensaje"
+    git pull
+    git push
+    git log --oneline
+    git switch nombre-rama
+    git switch -c nueva-rama
+    git branch

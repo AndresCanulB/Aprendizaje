@@ -1,0 +1,9 @@
+- Switch se usa para cambiar de rama y es mas moderno que checkout
+
+- Para cambiar de rama:
+
+    git switch nombre-rama
+
+- Para crear y cambiar a una rama:
+
+    git switch -c nombre-rama

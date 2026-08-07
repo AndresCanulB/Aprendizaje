@@ -1,0 +1,6 @@
+
+- Un markdown es un lenguaje de marcado que se utiliza para dar formato a textos.
+
+- Se utiliza comunmente en archivos README.md 
+
+- Markdown acepta etiquetas HTML

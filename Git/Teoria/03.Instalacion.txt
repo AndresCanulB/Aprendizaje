@@ -1,0 +1,35 @@
+
+- ¿Cómo se instala Git?
+Git se puede descargar desde el sitio web oficial de Git (https://git-scm.com/downloads)
+o mediante un gestor de paquetes.
+
+- Git para Windows
+https://git-scm.com/download/win
+
+- Para instalar Git en Windows se puede descargar el paquete de instalacion o utilizar Winget
+
+Para instalar Winget es necesario utilizar en PowerShell:
+
+$progressPreference = 'silentlyContinue'
+Write-Host "Installing WinGet PowerShell module from PSGallery..."
+Install-PackageProvider -Name NuGet -Force | Out-Null
+Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null
+Write-Host "Using Repair-WinGetPackageManager cmdlet to bootstrap WinGet..."
+Repair-WinGetPackageManager -AllUsers
+Write-Host "Done."
+
+Para instalar Git con Winget:
+winget install --id Git.Git -e --source winget
+
+- Git para macOS
+https://git-scm.com/download/mac
+
+- Git para Linux
+sudo apt-get update
+sudo apt-get install git
+
+- ¿Como se instala GitHub Desktop?
+Github se puede descargar desde el sitio web oficial de GitHub (https://github.com/desktop)
+
+- ¿Que es el PATH en Git?
+El PATH es una variable de entorno que le indica a la terminal dónde buscar los comandos de Git.

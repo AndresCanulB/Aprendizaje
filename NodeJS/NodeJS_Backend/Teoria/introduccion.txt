@@ -1,0 +1,60 @@
+
+REPL
+
+Cuando instalamos NodeJS, instalamos REPL
+
+Al insertar el comando node en la terminal entramos a REPL
+
+REPL es el interprete de NodeJS
+
+Read Eval Print Loop: Permite ejecutar codigo de javascript de forma interactiva
+
+REPL es parecido a la consola del navegador
+
+Ctrl + L : Limpiar la consola
+
+REPL permite trabajar logica cuando se abren llaves o otros signos
+
+Los servidores son programas se van a ejecutar siempre
+
+cwd : Current working directory
+
+Tambien se puede ejecutar codigo en la terminal con: node -e
+
+node -e "console.log(10 + 10)"
+
+Con el comando .save se puede guardar en un archivo el codigo que se ha hecho en la sesion REPL
+
+Con el comando .load se puede cargar el archivo de la sesion de REPL
+
+Visual studio code
+
+Ctrl + signo mas o menos para alterar el tamaño del texto
+
+Cuando ejecutamos node archivo.js
+
+Le pasamos a REPL como parametro el archivo js
+
+----------------------------------------------------------------------------------------------------
+
+version: (1.0.0) : semver (simple version system)
+
+La version se divide en 3 numeros:
+
+El primer numero es para cambios importantes que rompen con la version anterior
+
+El segundo numero es para cambios importantes que no rompen con la version anterior
+
+El tercer numero es para cambios menores
+
+----------------------------------------------------------------------------------------------------
+
+Algunos modulos importados con npm, tendran en la carpeta nodemodules .bin ejutables 
+
+cli : command line interface
+
+----------------------------------------------------------------------------------------------------
+
+npx : npm (Node Package Manager) exec
+
+Permite ejecutar modulos de npm sin necesidad de instalarlos globalmente

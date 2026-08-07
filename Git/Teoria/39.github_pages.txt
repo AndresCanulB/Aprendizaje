@@ -1,0 +1,14 @@
+
+- Gitpages es un servicio que permite alojar paginas estaticas en GitHub Pages.
+
+- Se puede crear una pagina estatica en GitHub Pages de la siguiente manera:
+
+    - Crear una rama llamada gh-pages
+
+    - Crear un archivo index.html en la rama gh-pages
+
+    - Gitpages se encargara de mostrar la pagina estatica
+
+- La URL de la pagina estatica será: https://<usuario>.github.io/<nombre_repositorio>
+
+- Los archivos .html se pueden guardar en cualquier parte de la rama gh-pages

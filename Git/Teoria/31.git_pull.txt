@@ -1,0 +1,10 @@
+
+- Git pull sirve para obtener los cambios de un repositorio remoto y aplicarlos a tu repositorio local.
+
+- Es una combinacion de git fetch y git merge
+
+    git pull origin main
+
+- Cambiar la configuracion de pull para que haga merge:
+
+    git config pull.rebase false

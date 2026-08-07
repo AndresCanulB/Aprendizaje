@@ -1,0 +1,8 @@
+
+- Es un comando para mezclar los cambios de otra rama a la rama actual
+
+- Para fusionar una rama:
+
+    git merge nombre-rama
+
+- Debes estar en la rama donde quieres fusionar los cambios (ej. main)

@@ -1,0 +1,12 @@
+
+Para guardar una "snapshot" de los archivos en staging:
+
+    git commit -m "Mensaje"
+
+- Para ver el historial de commits:
+
+    git log
+
+- Para deshacer el último commit:
+
+    git reset HEAD~1

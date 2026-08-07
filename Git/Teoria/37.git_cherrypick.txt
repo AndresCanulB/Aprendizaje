@@ -1,0 +1,4 @@
+
+- Git cherry-pick es un comando de Git que permite seleccionar un commit específico de una rama y aplicarlo a otra rama.
+
+    git cherry-pick <commit_hash>

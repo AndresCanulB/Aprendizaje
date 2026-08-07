@@ -1,0 +1,18 @@
+
+- Un branch es una version paralela del codigo
+
+- Para crear una rama:
+
+    git branch nombre-rama
+
+- Para ver el historial de ramas:
+
+    git log --oneline --graph --all
+
+- Para eliminar una rama:
+
+    git branch -d nombre-rama
+
+- Para eliminar una rama que no se ha fusionado:
+
+    git branch -D nombre-rama

@@ -1,0 +1,23 @@
+
+- ¿Qué es un Sistema de Control de Versiones?
+Un sistema de control de versiones es un sistema que permite rastrear y gestionar los cambios realizados en un proyecto a lo largo del tiempo.
+Permite revertir cambios, comparar versiones y colaborar con otros desarrolladores.
+
+- ¿Que significa distribuido?
+Significa que cada usuario tiene una copia completa del repositorio en su propia computadora.
+
+- ¿Qué es Git?
+Git es un sistema de control de versiones distribuido.
+Creado por Linus Torvalds en 2005.
+
+- ¿Qué es GitHub?
+GitHub es una plataforma de alojamiento de código fuente que utiliza Git.
+Permite colaborar con otros desarrolladores en proyectos de software.
+
+- ¿Qué es el repositorio?
+Un repositorio es un lugar donde se almacena el código fuente y su historial de cambios.
+Puede ser local (en tu computadora) o remoto (en GitHub).
+
+- ¿Qué es el commit?
+Un commit es un cambio en el código fuente. Es una instantánea del proyecto en un momento determinado.
+Cada commit tiene un identificador único llamado hash.

@@ -1,0 +1,28 @@
+
+- Typescript se puede instalar de dos formas:
+
+    En un proyecto
+
+    De forma global
+
+- Instalacion en un proyecto:
+
+    npm install typescript --save-dev
+
+- Instalacion de forma global:
+
+    npm install -g typescript
+
+- Para verificar que la instalación fue exitosa, se puede ejecutar el siguiente comando:
+
+    tsc --version
+
+    tsc -v
+
+- Para transpilar el codigo de una aplicacion de typescript a javascript:
+
+    tsc archivo.ts
+
+- Para mantener la escucha activa de transpilacion en una carpeta
+
+    tsc -w

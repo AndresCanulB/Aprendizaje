@@ -1,0 +1,26 @@
+
+- Github actions permite ejecutar acciones automatizadas en GitHub.
+
+- Flujo de Github Actions:
+
+    1. Crear una carpeta .github en el directorio raíz del repositorio
+
+    2. Crear una carpeta workflows dentro de .github
+
+    3. Crear un archivo .yml dentro de workflows
+
+    4. El archivo .yml debe contener la configuración del workflow
+
+- Ejemplo de archivo .yml:
+
+    name: CI
+
+    on: [push]
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: Run a one-line script
+            run: echo Hello, world!

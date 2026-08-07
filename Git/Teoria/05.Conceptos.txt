@@ -1,0 +1,34 @@
+Conceptos principales
+
+Repositorio (Repository):
+    Es la carpeta donde Git almacena el historial de cambios del proyecto.
+
+Commit:
+    Una "fotografía" de los archivos en un momento determinado.
+
+Working Directory:
+    Los archivos que estás editando actualmente.
+
+Staging Area (Index):
+    Área temporal donde preparas los cambios antes de crear un commit.
+
+Branch (Rama):
+    Línea de desarrollo independiente. La rama principal suele llamarse main.
+
+Merge:
+    Proceso de combinar cambios de dos ramas.
+
+Remote Repository:
+    Repositorio alojado en un servidor, por ejemplo en GitHub.
+
+Clone:
+    Copia local de un repositorio remoto.
+
+Pull:
+    Descarga cambios del repositorio remoto y los integra en tu rama local.
+
+Push:
+    Envía tus commits locales al repositorio remoto.
+
+Conflict (Conflicto):
+    Ocurre cuando Git no puede combinar cambios automáticamente.

@@ -1,0 +1,8 @@
+
+- Git fetch se utiliza para obtener los cambios de un repositorio remoto a tu repositorio local, pero no los aplica.
+
+    git fetch origin
+
+- Para obtener los cambios de una rama específica:
+
+    git fetch origin nombre-rama

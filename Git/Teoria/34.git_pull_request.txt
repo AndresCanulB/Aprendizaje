@@ -1,0 +1,3 @@
+
+- Un pull request es una propuesta de cambios que se hace a un repositorio.
+

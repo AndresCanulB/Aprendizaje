@@ -1,0 +1,2 @@
+
+- Un repository o repositorio es un contenedor de archivos y su historial de cambios.

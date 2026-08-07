@@ -1,0 +1,9 @@
+- El comando push se utiliza para enviar los cambios de tu repositorio local a un repositorio remoto
+
+- Para enviar cambios a Github:
+
+    git push -u origin main
+
+- Para enviar cambios a una rama específica:
+
+    git push -u origin nombre-rama

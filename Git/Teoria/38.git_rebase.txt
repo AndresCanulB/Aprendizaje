@@ -1,0 +1,4 @@
+
+- Git rebase es un comando de Git que permite combinar los commits de una rama en otra rama.
+
+    git rebase <rama>

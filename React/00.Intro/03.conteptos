@@ -1,0 +1,33 @@
+
+¿Que es React?
+
+- Es una libreria javascript para crear interfaces de usuario en una sola pagina index.html
+- Propone componentes reutilizables, parametrizables, predecibles y combinables.
+- Remplaza el DOM tradicional de JS por un DOM virtual
+
+¿Quien lo creo?
+
+- Fue creado por Jordan Walke en el 2013
+- Actualmente es mantenido por Meta (Facebook)
+
+¿Por que se llama react?
+
+- Se llama react porque "reacciona" a los cambios en los datos y actualiza la interfaz de usuario
+
+¿Porque es una libreria y no un framework?
+
+- Es una libreria porque no trae por defecto herramientas, tu decides cuando renderizar y que usar
+
+¿Cual es el framework de React?
+
+- Es Next.js (Es un meta-framework creado por Vercel para escalar aplicaciones de React)
+- Puede servir tanto para backend como para frontend, lo que lo hace muy versatil
+- NextJS trar todas las herramientas incluidas
+- Te dice como organizar archivos, como hacer rutas, como renderizar.
+- Se usa en proyectos grandes nivel empresas como Meta (Facebook), Instagram, Twitter, Netflix, etc.
+
+Sintaxis - JSX / TSX
+
+- Es una extension de sintaxis para JavaScript (JSX) o TypeScript (TSX)
+- No es HTML, es un lenguaje hibrido que permite escribir codigo HTML dentro de JavaScript
+

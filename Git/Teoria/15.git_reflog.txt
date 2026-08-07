@@ -1,0 +1,4 @@
+
+- Se utiliza para ver el historial de todos los movimientos del puntero HEAD
+    
+    git reflog

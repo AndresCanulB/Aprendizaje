@@ -1,0 +1,24 @@
+
+- Para guardar los cambios temporalmente en local:
+
+    git stash
+
+- Para ver los cambios guardados:
+
+    git stash list
+
+- Para volver a aplicar los cambios guardados:
+
+    git stash apply
+
+- Para volver a aplicar y eliminar los cambios guardados:
+
+    git stash pop
+
+- Para eliminar cambios en stash:
+
+    git stash drop
+
+- Para eliminar todos los cambios en stash:
+
+    git stash clear

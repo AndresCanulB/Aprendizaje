@@ -1,0 +1,6 @@
+
+- Github es una plataforma de alojamiento de repositorios de código fuente que utiliza el control de versiones distribuido de Git.
+
+- Permite a los desarrolladores colaborar en proyectos de software de manera eficiente.
+
+- Los repositorios pueden ser públicos o privados, lo que permite controlar el acceso al código fuente.

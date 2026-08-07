@@ -1,0 +1,35 @@
+- Nos permite situarnos en un punto en concreto de un snapshot o de un fichero
+
+- Se utiliza principalmente para cambiar ramas, commits o restaurar archivos
+
+- Te mueve a la rama develop.
+
+    git checkout develop
+
+- Hoy en día se recomienda:
+
+    git switch develop
+
+- Crear y cambiar a una rama
+
+    git checkout -b nombre-rama
+
+- Equivale a:
+
+    git switch -c nombre-rama
+    
+- Volver a una versión específica
+
+    git checkout a1b2c3d
+
+- Te mueve temporalmente a ese commit (estado detached HEAD).
+
+- Restaurar un archivo
+
+    git checkout -- archivo.txt
+
+- Descarta los cambios locales del archivo.
+
+- Actualmente se recomienda:
+
+    git restore archivo.txt

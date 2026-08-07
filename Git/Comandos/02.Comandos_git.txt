@@ -1,0 +1,166 @@
+
+- Todos los comandos de Git son iguales en todos los sistemas operativos.
+
+- Para saber que tenemos instalado Git:
+    git
+
+- Configuración Inicial
+
+    git config --global user.name "Tu Nombre"
+    git config --global user.email "tu@email.com"
+
+- Cambia el nombre de la rama por defecto de master a main:
+
+    git config --global init.defaultBranch main
+
+   
+- Inicializa un nuevo repositorio de Git en el directorio actual.
+
+    git init
+
+- La carpeta oculta donde se almacenará todo el historial de cambios:
+
+    .git
+
+- Clonar un repositorio:
+
+    git clone URL_DEL_REPOSITORIO
+
+- Ejemplo:
+
+    git clone https://github.com/usuario/proyecto.git
+
+- Ver el estado del repositorio:
+
+- Es probablemente el comando más utilizado.
+
+    git status
+
+- Agregar archivos al área de preparación:
+
+- Agregar un archivo:
+
+    git add archivo.txt
+
+- Agregar todos los cambios:
+
+    git add .
+
+- Crear commits:
+
+    git commit -m "Descripción del cambio"
+
+- Agregar y hacer commit de archivos ya rastreados:
+
+    git commit -am "Descripción"
+
+- Ver historial:
+
+    git log
+
+- Versión resumida:
+
+    git log --oneline
+
+- Ver gráfico de ramas:
+
+    git log --oneline --graph --all
+
+- Crear un alias para no escribir comandos largos:
+
+    git config --global alias.st status
+    git config --global alias.co checkout
+    git config --global alias.br branch
+    git config --global alias.cm commit
+    git config --global alias.lg "log --oneline --graph --all"
+
+- Ver los alias configurados
+
+    git config --global --get-regexp alias
+
+- Eliminar un alias
+
+    git config --global --unset alias.nombre-alias
+
+- Eliminar todos los alias
+
+    git config --global --unset-all alias
+
+- Etiquetar commits para hacer referencas a puntos importantes
+
+    git tag v1.0.0
+
+- Ver todos los tags
+
+    git tag
+
+- Moverme entre la rama por medio de tags
+
+    git checkout tags/nombre-tag
+
+- Volver al estado actual de mi rama
+
+    git checkout main
+
+- Trabajar con ramas:
+
+- Ver ramas:
+
+    git branch
+
+- Crear rama:
+
+    git branch nombre-rama
+
+- Cambiar de rama:
+
+    git switch nombre-rama
+
+- Crear y cambiar:
+
+    git switch -c nombre-rama
+
+- Fusionar ramas:
+
+- Desde la rama destino:
+
+    git merge nombre-rama
+
+- Conectar un repositorio remoto:
+
+- Ver remotos:
+
+    git remote -v
+
+- Agregar remoto:
+
+    git remote add origin URL
+
+- Enviar y recibir cambios:
+
+- Enviar cambios:
+
+    git push origin main
+
+- Descargar cambios:
+
+    git pull
+
+- Solo descargar:
+
+    git fetch
+
+- Deshacer cambios:
+
+- Descartar cambios en un archivo:
+
+    git restore archivo.txt
+
+- Quitar archivos del staging:
+
+    git restore --staged archivo.txt
+
+- Volver a un commit anterior:
+- ⚠️ Este comando elimina cambios no guardados.
+
+    git reset --hard HASH

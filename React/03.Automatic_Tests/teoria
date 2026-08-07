@@ -1,0 +1,62 @@
+El Testing es una herramienta que permite validar que el código funcione correctamente.
+
+Hay 3 tipos de Testing:
+
+1. Unit Testing
+   - Testean una unidad de código aislada, es enfocado en partes atomicas.
+   - Son rápidos y fáciles de escribir.
+   - Se usan para probar funciones, componentes, etc.
+
+2. Integration Testing
+   - Testean la integración de varias unidades de código.
+   - Son más lentos que los unit tests.
+   - Se usan para probar la integración de componentes, servicios, etc.
+
+3. E2E Testing (End-to-End Testing)
+   - Testean la aplicación completa desde la perspectiva del usuario.
+   - Son más lentos que los unit tests y los integration tests.
+   - Se usan para probar flujos completos del usuario.
+
+Las pruebas unitarias deben ser:
+
+    01 Pruebas atomcias simples
+
+    02 Se recomienda no tener dependencias de otros componentes
+
+    03 Debe ser especializada en la pieza que estamos probando
+
+Normas de las pruebas:
+
+    01 Deben ser faciles de leer, entender y mantener
+
+    02 Deben ser rapidas
+
+    03 Deben ser flexibles
+
+"Triple A" en Testing:
+
+    01 Arrange (Preparación): Se definen las variables y el estado inicial del test.
+    02 Act (Acción): Se ejecuta la función o componente que se está probando.
+    03 Assert (Aserción): Se verifica que el resultado sea el esperado.
+
+Que es la cobertura de pruebas:
+
+    Es un indicador que nos dice que porcentaje de nuestro código está cubierto por pruebas.
+
+Tipos de Cobertura de Pruebas:
+
+    1. Line Coverage
+       - Mide el porcentaje de líneas de código que están cubiertas por pruebas.
+
+    2. Branch Coverage
+       - Mide el porcentaje de ramas de decision probadas.
+
+    3. Function Coverage
+       - Mide el porcentaje de funciones o metodos invocados.
+
+    4. Condition Coverage
+       - Mide el porcentaje de condiciones evaluadas en ambos sentidos (verdadero y falso).
+
+Que es Vitest:
+
+    Es un framework de testing para JavaScript y TypeScript que permite crear pruebas unitarias, integration tests y e2e tests.

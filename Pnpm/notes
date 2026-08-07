@@ -1,0 +1,25 @@
+pnpm es un gestor de paquetes de código abierto que ayuda a gestionar las dependencias de un proyecto de JavaScript.
+
+Es más rápido y eficiente que otros gestores de paquetes como npm o yarn.
+
+## Comandos principales
+
+- pnpm install: instala las dependencias del proyecto.
+
+- pnpm dlx: ejecuta un paquete de npm.
+
+- pnpm add <package>: instala un paquete específico.
+
+- pnpm add <package> -D: instala un paquete como dependencia de desarrollo.
+
+- pnpm add <package> -g: instala un paquete globalmente.
+
+- pnpm remove <package>: elimina un paquete.
+
+- pnpm update: actualiza todas las dependencias.
+
+- pnpm update <package>: actualiza un paquete específico.
+
+- pnpm uninstall: desinstala todas las dependencias.
+
+- pnpm uninstall <package>: desinstala un paquete específico.

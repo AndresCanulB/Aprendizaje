@@ -1,0 +1,62 @@
+
+- Git flow es una metodología de desarrollo de software
+
+- Se basa en la creacion de diferentes ramas para el desarrollo de software
+
+- Ramas principales:
+
+    - main: rama principal que contiene el codigo estable, se puede versionar con tags
+
+    - develop: rama de desarrollo que contiene el codigo en desarrollo
+
+- Ramas secundarias:
+
+    - feature: rama para el desarrollo de nuevas funcionalidades
+
+    - hotfix: rama para la correccion de errores
+
+    - release: rama para la preparacion de lanzamientos
+
+- Flujo basico:
+
+    1. Crear la rama feature
+
+    2. Crear la rama hotfix
+
+    3. Crear la rama release
+
+    4. Fusionar las ramas
+
+    5. Eliminar las ramas
+
+- Se puede instalar una utilidad para gestionar git flow:
+
+    sudo apt-get install git-flow
+
+- Inicializa git flow en el repositorio:
+
+    git flow init
+
+- Inicia una nueva rama para una nueva funcionalidad:
+
+    git flow feature start nombre_feature
+
+- Finaliza una rama para una nueva funcionalidad:
+
+    git flow feature finish nombre_feature
+
+- Inicia una nueva rama para una correccion de errores:
+
+    git flow hotfix start nombre_hotfix
+
+- Finaliza una rama para una correccion de errores:
+
+    git flow hotfix finish nombre_hotfix
+
+- Inicia una nueva rama para la preparacion de lanzamientos:
+
+    git flow release start nombre_release
+
+- Finaliza una rama para la preparacion de lanzamientos:
+
+    git flow release finish nombre_release

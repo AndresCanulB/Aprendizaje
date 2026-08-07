@@ -1,0 +1,5 @@
+Express es un framework de NodeJS
+
+Es un framework unoppioned : Significa que no nos dice cómo estructurar nuestro código.
+
+Nos da funcionalidades ya creadas y nosotros tenemos que crear la estructura

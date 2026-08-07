@@ -1,0 +1,36 @@
+- Que es el Kernel?
+Es el nucleo del sistema operativo, es el que se encarga de gestionar los recursos del sistema.
+
+- Que es un interprete?
+Es un programa que se encarga de interpretar y ejecutar comandos.
+
+- Que es un CLI?
+Es el tipo de interfaz basada en texto donde interactúas escribiendo comandos.
+No es una herramienta específica, sino un concepto.
+
+- Que es un Shell?
+Es un interprete de comandos que nos permite interactuar con el Kernel del sistema operativo.
+El Shell es la capa que se encarga de recibir las instrucciones que le damos por teclado y las traduce a un lenguaje que el Kernel pueda entender.
+
+- Que es una terminal?
+Es la ventana o aplicación que permite el uso de un CLI.
+Ejemplo: Ubuntu Terminal, Windows Terminal, iTerm.
+El shell se ejecuta dentro de una terminal.
+
+- Que es POSIX?
+Es un estandar de la industria de software que define como debe ser un sistema operativo Unix.
+Su objetivo es asegurar la portabilidad del software entre diferentes sistemas operativos.
+
+- Que es un sistema operativo tipo Unix?
+Es un sistema operativo que cumple con el estandar POSIX.
+Ejemplos: Linux, macOS, BSD.
+
+- Que es Bash?
+Bash es el shell por defecto en la mayoría de las distribuciones de Linux y en macOS.
+Existen otros shells como Zsh, Fish, etc.
+
+- Que es Windows PowerShell?
+Es el shell por defecto en Windows.
+
+- Que es Warp?
+Es un emulador de terminal con muchas funcionalidades adicionales.

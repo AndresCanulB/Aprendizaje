@@ -1,0 +1,6 @@
+
+- Es un comando peligroso porque puede eliminar un commit que esta en el medio y crea uno nuevo con los cambios contrarios al final, rompiendo la linea temporal.
+
+- Para deshacer el último commit:
+
+    git revert HEAD

@@ -1,0 +1,26 @@
+
+- Los alias sirven para crear atajos para comandos largos
+
+- Para crear un alias en Git:
+
+    git config --global alias.nombre-alias "comando"
+
+- Ejemplo:
+
+    git config --global alias.st status
+    git config --global alias.co checkout
+    git config --global alias.br branch
+    git config --global alias.cm commit
+    git config --global alias.tree "log --graph --decorate --all --oneline"
+
+- Ver los alias configurados
+
+    git config --global --get-regexp alias
+
+- Eliminar un alias
+
+    git config --global --unset alias.nombre-alias
+
+- Eliminar todos los alias
+
+    git config --global --unset-all alias

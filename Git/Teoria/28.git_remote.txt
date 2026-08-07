@@ -1,0 +1,17 @@
+
+- Ver el estado de la conexion remota
+
+    git remote -v
+
+- Ver el estado de la conexion remota con mas detalle
+
+    git remote show origin
+
+- Cambiar el repositorio a SSH
+
+    git remote set-url origin git@github.com:AndresCanulB/Git_Practice.git
+
+- Git Remote es un enlace a otro repositorio
+
+    git remote add origin https://github.com/AndresCanulB/Git_Practice.git
+

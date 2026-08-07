@@ -1,0 +1,18 @@
+
+- ¿Cuando fue creado Git?
+En el 7 de abril de 2005 por Linus Torvalds.
+
+- Quien es Linus Torvalds?
+Un programador finlandés que tambien creó el kernel de Linux. 
+Es considerado una de las personas más influyentes en el mundo del software libre.
+
+- ¿Por que fue creado?
+Linux necesitaba un sistema de control de versiones distribuido para gestionar el código fuente del kernel de Linux.
+
+- ¿Cuales son sus caracteristicas?
+- Es distribuido
+- Es gratuito
+- Es de codigo abierto
+- Es rapido
+- Es seguro
+

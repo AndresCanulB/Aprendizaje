@@ -1,0 +1,12 @@
+
+En Windows para usar Bash se debe utilizar WSL2(Windows Subsystem for Linux)
+
+Para instalar WSL2 se debe ejecutar en PowerShell como administrador: wsl --install
+
+Reiniciar
+
+Configurar el usuario y contraseña
+
+Por defecto se instala Ubuntu
+
+En WSL2 el directorio de Windows se puede acceder como /mnt/c

@@ -1,0 +1,24 @@
+- Que es Bash?
+Es un shell, una interfaz de linea de comandos que nos permite comunicarnos con el sistema operativo.
+Es un lenguaje de scripting.
+
+- Que significa Bash?
+Bourne-again shell.
+
+- Que es BashScripting?
+Es la automatización de tareas repetitivas mediante comandos de terminal que se guardan en archivos.
+
+- Que es shell script?
+Es un archivo de texto que contiene una secuencia de comandos de Bash que se ejecutarán secuencialmente.
+
+- Cuando se creo Bash?
+En 1989 por Brian Fox para el proyecto GNU.
+
+- Porque se creo Bash?
+Para reemplazar el shell de pago de sistemas Unix, el Bourne Shell, por una alternativa libre y de código abierto.
+
+- Que es el proyecto GNU?
+Es un proyecto que busca crear un sistema operativo libre y de código abierto.
+
+- Quien es Brian Fox?
+Es un programador estadounidense que se encarga de desarrollar Bash.

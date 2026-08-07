@@ -1,0 +1,59 @@
+- Se utiliza para mover el puntero HEAD y, opcionalmente, modificar el staging area y los archivos.
+
+- Quitar archivos del staging, si hiciste:
+
+    git add archivo.txt
+
+- y quieres sacarlo del staging:
+
+    git reset archivo.txt
+
+- Actualmente se recomienda:
+
+    git restore --staged archivo.txt
+
+- Volver a un commit anterior
+
+- Supongamos este historial:
+
+A -- B -- C -- D (HEAD)
+
+- Soft:
+
+    git reset --soft B
+
+- Resultado:
+
+    A -- B (HEAD)
+
+- Los cambios de C y D quedan en staging.
+
+- Los commits desaparecen, pero los cambios siguen listos para volver a hacer commit.
+
+- Mixed (por defecto)
+
+    git reset B
+
+- O:
+
+    git reset --mixed B
+
+- Resultado:
+
+    A -- B (HEAD)
+
+- Los cambios de C y D quedan en el directorio de trabajo.
+
+- Los cambios siguen existiendo, pero ya no están en staging.
+
+- Hard
+
+    git reset --hard B
+
+- Resultado:
+
+    A -- B (HEAD)
+
+- Se eliminan los commits, el staging y los cambios locales.
+
+- Es el más peligroso porque puede borrar trabajo no respaldado.

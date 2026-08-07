@@ -1,0 +1,44 @@
+- Para ver el estado de los archivos:
+
+    git status
+
+- Para ver el historial de commits:
+
+    git log
+
+- Para ver el historial como una rama:
+
+    git log --graph
+
+- Ver el historial como una rama y cada commit en una sola línea:
+
+    git log --graph --pretty=oneline
+
+- Para ver el historial de commits con más detalle:
+
+    git log --oneline
+
+
+- Para ver el historial decorado y cada commit en una sola línea:
+
+    git log --graph --decorate --all --oneline
+
+
+- Para ver el historial decorado, cada commit en una sola línea y en formato árbol:
+
+    git log --graph --decorate --all --oneline --graph --tree
+
+
+- Para ver el historial decorado, cada commit en una sola línea, en formato árbol y ordenado por fecha:
+
+    git log --graph --decorate --all --oneline --graph --tree --sort=-committerdate
+
+
+- Para ver el historial decorado, cada commit en una sola línea, en formato árbol, ordenado por fecha y con información de autor:
+
+    git log --graph --decorate --all --oneline --graph --tree --sort=-committerdate --pretty=format:"%h - %an, %ad : %s"
+
+
+- Para ver el historial decorado, cada commit en una sola línea, en formato árbol, ordenado por fecha, con información de autor y con información de autor:
+
+    git log --graph --decorate --all --oneline --graph --tree --sort=-committerdate --pretty=format:"%h - %an, %ad : %s" --author="Nombre"

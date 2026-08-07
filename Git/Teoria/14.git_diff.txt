@@ -1,0 +1,7 @@
+- Ver cambios en el directorio de trabajo:
+
+    git diff
+
+- Ver cambios en un archivo:
+
+    git diff nombre-archivo

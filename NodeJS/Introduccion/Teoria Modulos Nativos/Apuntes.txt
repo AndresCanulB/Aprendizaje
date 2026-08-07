@@ -1,0 +1,13 @@
+
+nvm install v0.0.0 // Para instalar una version de NodeJS
+
+nvm use v0.0.0 // Para usar una version  de NodeJS
+
+nvm list // Para ver la lista de versiones de NodeJS
+
+node // Ejecuta NodeJS para navegar entre sus opciones // Tambien ejecuta REPL en la linea de comandos
+
+REPL // Read Eval Print Loop // Similar a la consola del explorador
+
+
+

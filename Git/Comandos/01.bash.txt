@@ -1,0 +1,16 @@
+
+- Ver los directorios y ficheros de mi ruta:
+ls
+
+- Moverse en el shell
+cd
+
+- Ver mi ubicacion actual
+pwd
+
+- Crear una carpeta
+mkdir
+
+- Abrir Visual Studio Code
+code .
+

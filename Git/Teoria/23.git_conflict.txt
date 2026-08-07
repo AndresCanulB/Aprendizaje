@@ -1,0 +1,2 @@
+- En git un conflict es cuando dos personas modifican el mismo archivo y git no sabe cual quedarse.
+

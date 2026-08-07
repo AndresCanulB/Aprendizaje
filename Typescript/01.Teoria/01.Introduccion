@@ -1,0 +1,31 @@
+
+- Que es Typescript?
+
+    Es un superset de JavaScript
+    
+- Porque nacio Typescript?
+
+    Porque JavaScript tiene muchas falencias y Typescript vino a solucionar esos problemas.
+
+- Cuales son las falencias de JavaScript?
+
+    No tiene tipado de variables
+
+    No tiene errores en tiepos de escritura (linter)
+
+    No tiene autocompletado de dependencias de variables
+
+    No tiene clases y modulos (ES6)
+
+    No tiene validacion de objetos dentro de objetos
+
+    No tiene tipado de respuestas http
+
+- Como funciona Typescript?
+
+    Typescript no se ejecuta en el navegador, entonces transpila el codigo a Javascript
+
+- Que es Transpilacion?
+
+    Es el proceso de convertir codigo de un lenguaje a otro
+

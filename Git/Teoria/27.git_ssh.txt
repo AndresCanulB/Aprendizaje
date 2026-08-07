@@ -1,0 +1,50 @@
+
+- Para conectar Github con Git se utiliza SSH
+
+- Verificar si ya tienes una clave SSH
+
+    ls -la ~/.ssh
+
+- Generar una nueva clave SSH
+
+    ssh-keygen -t ed25519 -C "acanulb70494@gmail.com"
+
+- Iniciar el agente SSH
+
+    eval "$(ssh-agent -s)"
+
+- Deberías ver algo similar a:
+
+    Agent pid 1234
+
+- Agregar la clave al agente
+
+    ssh-add ~/.ssh/id_ed25519
+
+- Copiar la clave pública
+
+- Mostrar la clave:
+
+    cat ~/.ssh/id_ed25519.pub
+
+- Verás algo parecido a:
+
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA... correo@ejemplo.com
+
+- Copia toda la línea.
+
+- Agregar la clave en GitHub
+
+    - Ve a GitHub Settings - SSH Keys
+
+    - Selecciona New SSH key.
+
+    - Escribe un nombre (por ejemplo: "WSL2 Laptop").
+
+    - Pega la clave pública.
+
+    - Guarda.
+
+- Verificar la conexión SSH
+
+    ssh -T git@github.com

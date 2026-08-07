@@ -1,0 +1,16 @@
+
+- Se usa para marcar versiones.
+
+    git tag v1.0.0
+
+- Ver los tags:
+
+    git tag
+
+- Volver a una versión específica:
+
+    git checkout tags/v1.0.0
+
+- Volver al estado actual de mi rama:
+
+    git checkout main

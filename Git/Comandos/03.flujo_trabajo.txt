@@ -1,0 +1,17 @@
+- Flujo básico de trabajo
+
+- Ver cambios:
+
+    git status
+
+- Agregar cambios:
+
+    git add .
+
+- Crear commit:
+
+    git commit -m "Descripción"
+
+- Enviar al remoto:
+
+    git push

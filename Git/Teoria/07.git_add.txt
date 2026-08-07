@@ -1,0 +1,11 @@
+
+- Para guardar archivos en staging area:
+
+    git add <nombre-archivo>
+
+- Para guardar todos los archivos en staging area:
+
+    git add .
+
+
+

@@ -1,0 +1,19 @@
+
+- Sirve para ignorar archivos que no se deben subir al repositorio.
+
+- Para crear un .gitignore en git:
+
+    touch .gitignore
+
+- En el archivo .gitignore se pueden poner archivos o carpetas que no se deben subir al repositorio.
+
+- Ejemplo:
+
+    .env
+    node_modules
+    venv
+    __pycache__
+
+- Para agregar un fichero al .gitignore:
+
+    **/nombre-archivo
