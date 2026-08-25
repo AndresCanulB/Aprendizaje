@@ -1,11 +1,14 @@
-import type { FC } from "react";
-import type { Gif } from "../interfaces/gif.interface";
+import React, { type FC } from "react";
+import type { Gif } from "../../mock-data/gifs.mock";
 
 interface Props {
   gifs: Gif[];
 }
 
-export const GifList: FC<Props> = ({ gifs }) => {
+// FC significa Functional Component
+// Es un tipo de TypeScript que provee React para tipar componentes funcionales
+// Es una forma de typar, aunque se puede tipar directamente en los parametros {}: Props
+export const TareaGifList: FC<Props> = ({ gifs }) => {
   return (
     <div className="gifs-container">
       {gifs.map((gif) => (

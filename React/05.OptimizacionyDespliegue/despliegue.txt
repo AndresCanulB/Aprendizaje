@@ -1,0 +1,28 @@
+
+Cuando un proyecto de React se va a desplegar es necesario hacer un build del proyecto.
+
+El build es el proceso de empaquetar el proyecto en archivos estáticos que se pueden servir desde un servidor web.
+
+Para crear el build se ejecuta el comando "npm run build".
+
+Para ver los archivos que se generan es necesario mirar en la carpeta "dist" o "build".
+
+Para que funcione en produccion se necesita un servidor http.
+
+Hay muchos servidores http: 
+
+- Apache
+- Nginx
+- IIS
+
+Podemos crear un servidor http local con el modulo http-server de npm.
+
+npm i -g http-server
+
+Podemos usar un servicio de hosting de aplicaciones web.
+
+- Firebase
+- Vercel
+- Netlify
+- Heroku
+- Github pages
