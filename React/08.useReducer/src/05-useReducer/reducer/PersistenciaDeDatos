@@ -1,0 +1,231 @@
+
+Persistencia de datos en navegadores
+
+Los navegadores ofrecen múltiples mecanismos para almacenar datos del lado del cliente. 
+
+Cada uno tiene un propósito, capacidad y ciclo de vida diferente.
+
+---------------------------------------------------------------------------------------------------------------------
+
+1. Local Storage
+
+Almacena datos en pares clave-valor como strings. 
+
+Los datos persisten indefinidamente, incluso si cierras el navegador o reinicias la computadora. 
+
+Solo se eliminan si el usuario los borra manualmente o el código los elimina.
+
+Capacidad: ~5-10 MB por dominio
+
+Alcance: Compartido entre todas las pestañas y ventanas del mismo dominio
+
+API: localStorage.setItem("clave", "valor"), localStorage.getItem("clave")
+
+Limitación: Solo almacena strings. Para guardar objetos necesitas JSON.stringify() y JSON.parse()
+
+Uso típico: Preferencias del usuario, temas, datos de formularios que no son sensibles
+
+---------------------------------------------------------------------------------------------------------------------
+
+2. Session Storage
+
+Funciona igual que Local Storage, pero los datos se borran cuando cierras la pestaña.
+
+Capacidad: ~5-10 MB por dominio
+
+Alcance: Exclusivo de cada pestaña. Dos pestañas del mismo sitio tienen Session Storage independiente
+
+API: sessionStorage.setItem("clave", "valor"), sessionStorage.getItem("clave")
+
+Limitación: También solo almacena strings
+
+Uso típico: Datos temporales de navegación, estado de un formulario multi-paso, tokens temporales
+
+---------------------------------------------------------------------------------------------------------------------
+
+3. Cookies
+
+El mecanismo más antiguo de persistencia. 
+
+Son pequeños fragmentos de texto que se envían automáticamente al servidor con cada petición HTTP.
+
+Capacidad: ~4 KB por cookie, máximo ~20 cookies por dominio
+
+Alcance: Se pueden configurar por dominio y path
+
+Expiración: Puedes definir una fecha de expiración (Expires) o duración (Max-Age). 
+
+    Sin estos atributos, la cookie se borra al cerrar el navegador (cookie de sesión)
+
+Atributos de seguridad:
+
+    HttpOnly — No accesible desde JavaScript (protege contra XSS)
+
+    Secure — Solo se envía por HTTPS
+
+    SameSite — Controla si se envía en peticiones cross-site (protege contra CSRF)
+
+Uso típico: Autenticación, tracking, preferencias que el servidor necesita conocer
+
+---------------------------------------------------------------------------------------------------------------------
+
+4. IndexedDB
+
+Una base de datos completa dentro del navegador. 
+
+Es NoSQL, orientada a objetos, y soporta transacciones.
+
+Capacidad: Cientos de MB o incluso GB (depende del navegador y disco disponible)
+
+Alcance: Por dominio
+
+Características: Soporta índices, consultas por rango, cursores, y operaciones asíncronas
+
+API: Basada en eventos y más compleja que las anteriores. 
+
+    Se suelen usar librerías como Dexie.js o idb para simplificarla
+
+Uso típico: Aplicaciones offline, almacenar grandes cantidades de datos estructurados, cacheo de datos de API
+
+---------------------------------------------------------------------------------------------------------------------
+
+5. Cache Storage
+
+Parte de la Service Worker API. 
+
+Almacena pares de Request/Response HTTP completos. 
+
+Está diseñado para hacer que las aplicaciones funcionen offline.
+
+Capacidad: Grande (similar a IndexedDB, depende del disco)
+
+Alcance: Por dominio, accesible desde Service Workers y desde la página
+
+API: caches.open("mi-cache"), luego .put(), .match(), .delete()
+
+Uso típico: Progressive Web Apps (PWA), cacheo de assets estáticos (HTML, CSS, JS, imágenes), respuestas de API para modo offline
+
+---------------------------------------------------------------------------------------------------------------------
+
+6. Extension Storage
+
+Exclusivo de las extensiones del navegador (Chrome Extensions, Firefox Add-ons). 
+
+No está disponible para páginas web normales.
+
+Tipos:
+
+storage.local — Datos locales de la extensión (~5 MB, o ilimitado con permiso)
+
+storage.sync — Se sincroniza entre dispositivos donde el usuario tiene la misma cuenta (~100 KB)
+
+storage.session — Solo dura mientras la sesión de la extensión está activa
+
+API: chrome.storage.local.set({ clave: "valor" })
+
+Uso típico: Configuraciones de extensiones, datos que la extensión necesita persistir
+
+---------------------------------------------------------------------------------------------------------------------
+
+7. Private State Tokens
+
+Anteriormente llamados Trust Tokens. 
+
+Son un mecanismo de privacidad relativamente nuevo que permite a un sitio web emitir tokens criptográficos a un usuario para demostrar que es legítimo (no un bot), sin revelar su identidad.
+
+Propósito: Reemplazar funcionalidades anti-fraude que antes dependían de cookies de terceros
+
+Cómo funciona: Un sitio "emisor" que confía en ti te da tokens. Otro sitio "consumidor" puede verificar que tienes tokens válidos sin saber quién eres
+
+Uso típico: Verificación anti-fraude y anti-spam sin tracking
+
+---------------------------------------------------------------------------------------------------------------------
+
+8. Interest Groups (FLEDGE / Protected Audience API)
+
+Parte de la iniciativa Privacy Sandbox de Google. 
+
+Permite que el navegador almacene localmente los grupos de interés a los que pertenece un usuario para mostrar publicidad relevante sin cookies de terceros.
+
+Propósito: Publicidad dirigida preservando la privacidad
+
+Cómo funciona: Un anunciante agrega al navegador a un "grupo de interés" (ej: "interesado en zapatos"). 
+
+    Luego, las subastas de anuncios se ejecutan localmente en el navegador, no en servidores externos
+
+Uso típico: Retargeting publicitario sin tracking cross-site
+
+---------------------------------------------------------------------------------------------------------------------   
+
+9. Storage Buckets
+
+Una API más reciente que permite a los sitios crear múltiples "cubetas" de almacenamiento con diferentes políticas de persistencia y prioridad.
+
+Propósito: Dar al desarrollador control granular sobre cómo el navegador gestiona el almacenamiento
+
+Características: Cada bucket puede tener su propia configuración de:
+
+    Persistencia: Si el navegador puede borrar los datos bajo presión de almacenamiento o no
+
+    Cuota: Límite de espacio
+
+    Expiración: Tiempo de vida
+
+Uso típico: Separar datos críticos (que no deben borrarse) de datos de caché (que pueden borrarse si falta espacio)
+
+---------------------------------------------------------------------------------------------------------------------   
+
+Validadores de objetos en la persistencia de datos.
+
+¿Qué es Zod?
+
+Zod es una librería de validación de esquemas para JavaScript/TypeScript. 
+
+Te permite definir la forma (shape) que debe tener un dato y luego verificar en tiempo de ejecución si un dato real cumple con esa forma.
+
+¿Por qué es necesario?
+
+TypeScript valida tipos solo en tiempo de compilación (mientras escribes código). 
+
+Pero cuando recibes datos de fuentes externas — como LocalStorage, una API, un formulario, o un JSON — TypeScript no puede garantizar que esos datos sean correctos. Ahí entra Zod.
+
+TypeScript confía ciegamente en esto :
+
+const data = JSON.parse(localStorage.getItem("datos")!) as MiTipo;
+
+    Si alguien manipuló el LocalStorage, data podría tener cualquier cosa.
+
+Con Zod, validas de verdad:
+
+const result = MiSchema.safeParse(JSON.parse(localStorage.getItem("datos")!));
+
+    Si los datos son inválidos, result.error te lo dice.
+
+Cómo funciona
+
+1. Defines un esquema — describes la forma que esperas:
+
+import * as z from "zod/v4";
+
+const UsuarioSchema = z.object({
+  nombre: z.string(),
+  edad: z.number(),
+  activo: z.boolean()
+});
+
+2. Validas datos contra el esquema:
+
+.parse() — lanza un error si no es válido
+
+const usuario = UsuarioSchema.parse(datosDesconocidos);
+
+.safeParse() — retorna un resultado sin lanzar error
+
+const result = UsuarioSchema.safeParse(datosDesconocidos);
+
+if (result.error) {
+  console.log("Datos inválidos:", result.error);
+} else {
+  console.log("Datos válidos:", result.data); // tipado correctamente
+}
+
