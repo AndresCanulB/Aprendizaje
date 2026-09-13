@@ -1,22 +1,23 @@
-import { use, type JSX } from 'react';
-import { UserContext } from '../context/UserContext';
-import { Navigate } from 'react-router';
+import { use, type JSX } from "react";
+import { UserContext } from "../context/UserContext";
+import { Navigate } from "react-router";
 
 interface Props {
   element: JSX.Element; // React.ReactNode
-  // element: React.ReactNode; // React.ReactNode
+  // element: React.ReactNode;
 }
 
 export const PrivateRoute = ({ element }: Props) => {
   const { authStatus } = use(UserContext);
 
-  if (authStatus === 'checking') {
-    return null;
+  if (authStatus === "checking") {
+    return <div>Loading...</div>;
   }
 
-  if (authStatus === 'authenticated') {
+  if (authStatus === "authenticated") {
     return element;
   }
 
+  // replace se usa para que no cree una entrada en nuestro historial del navegador web
   return <Navigate to="/login" replace />;
 };
